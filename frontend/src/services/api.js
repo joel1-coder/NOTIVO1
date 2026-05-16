@@ -1,7 +1,7 @@
 // API Service Configuration
 import * as XLSX from 'xlsx';
 
-const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000/api';
+const API_BASE_URL = 'https://notivo1.onrender.com/api';
 
 // Helper function for API calls — 3 second timeout so pages never hang
 const apiCall = async (endpoint, options = {}) => {
