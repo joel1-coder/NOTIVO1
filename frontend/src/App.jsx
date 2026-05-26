@@ -18,9 +18,8 @@ import WorkflowMenuEditor        from './pages/workflow/WorkflowMenuEditor'
 // ── User Portal ───────────────────────────────────────────────────────────────
 import UserLogin       from './pages/user/UserLogin'
 import UserDashboard  from './pages/user/UserDashboard'
-import UserTasks      from './pages/user/UserTasks'
+import UserTasksAndSubmissions from './pages/user/UserTasksAndSubmissions'
 import UserTimetable  from './pages/user/UserTimetable'
-import UserSubmissions from './pages/user/UserSubmissions'
 import UserProgress   from './pages/user/UserProgress'
 import UserSettings   from './pages/user/UserSettings'
 
@@ -56,9 +55,9 @@ export default function App() {
 
         {/* ── User Portal Pages ── */}
         <Route path="/user/dashboard"   element={<UserDashboard />} />
-        <Route path="/user/tasks"       element={<UserTasks />} />
+        <Route path="/user/tasks"       element={<UserTasksAndSubmissions />} />
+        <Route path="/user/submissions" element={<UserTasksAndSubmissions />} />
         <Route path="/user/timetable"   element={<UserTimetable />} />
-        <Route path="/user/submissions" element={<UserSubmissions />} />
         <Route path="/user/progress"    element={<UserProgress />} />
         <Route path="/user/settings"    element={<UserSettings />} />
 
